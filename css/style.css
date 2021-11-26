@@ -1,0 +1,233 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url("https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css");
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+/* end reset */
+
+/* Structure */
+body {
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+
+header, #random, #inspiring, #action {
+    flex:1 1 auto; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    min-height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#inspiring {
+    background: #e5e7eb;
+}
+
+/* Header */
+ 
+header {
+    background: #1f2937; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items:center;
+}
+
+header .nav {
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width:70%;
+    min-width:70%;
+    padding:1rem 0;
+    gap:2rem; 
+}
+
+header .nav ul {
+    display:flex;
+    gap:2rem; 
+}
+
+header .nav a {
+    text-decoration: none;
+    font-size:.8rem;
+}
+
+header .nav a:hover {
+    text-decoration: underline;
+}
+
+header .other {
+    max-width:70%;
+    min-width:70%;
+    margin:40px auto;
+    display: flex;
+    gap:2rem;
+}
+
+header .other .awesome {
+    flex-basis: 50%;
+}
+
+header .other .img-placeholder {
+    flex-basis: 50%;
+    border:1px solid #000;
+    background:rgba(238, 238, 238, 0.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#f9f1f8
+}
+
+header .main {
+    font-size:48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+header .secondary, header li a {
+    font-size:18px;
+    color:#e5e7eb;
+}
+
+header .secondary {
+    margin:.5rem auto 2rem auto;
+}
+
+header .logo {
+    font-size:24px;
+    color:#f9faf8;
+}
+
+header a.signup {
+    background: #3882f6;
+    color: #e5e7eb;
+    text-decoration: none;
+    border: 1px solid #3882f6;
+    border-radius: 4px;
+    padding:.5rem 2rem; 
+}
+ 
+ 
+/* Random info */
+#random {}
+
+#random .item {
+    flex-basis: 60%;
+    margin:20px 0;
+}
+
+#random h3 {
+    font-size: 36px;
+    font-weight: 800;
+    color:#1f2937;
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+#random ul { 
+    display:flex;
+    justify-content: space-around; 
+    gap:.5rem;
+    flex-wrap:wrap;
+}
+
+#random li {
+    display:flex;
+    flex-direction: column; 
+}
+
+#random img {
+    border:2px solid #3882f6;
+    border-radius: 4px;   
+    min-height:80px;
+    min-width:80px; 
+    flex:0;
+}
+
+#random li .caption {
+    font-size:.65rem; 
+    max-width:104px;
+    padding:5px;
+    text-align:center;
+}
+ 
+
+/* Inspiring quote */
+#inspiring {}
+
+#inspiring .item {
+    flex-basis:55%;
+    margin:20px 0;
+}
+
+#inspiring .quotation {
+    font-size:24px;
+    font-weight:200;
+    font-style: italic;
+}
+
+#inspiring .speaker {
+    text-align: right;
+    font-weight:700;
+    margin-top:.25rem;
+}
+
+
+/* Call to action */
+#action {}
+
+#action .item {
+    display:flex;
+    background: #3882f6;
+    color: #f9f1f8;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 70%;  
+    padding:1rem 1rem;
+    border-radius:4px;
+    margin:20px 0;  
+    gap:.5rem; 
+}
+
+#action h4 {
+    font-weight: 700;
+    margin-bottom:.25rem;
+}
+
+#action p {
+    font-size: .8em;
+    font-weight: 300px;
+}
+
+#action a {
+    text-decoration: none;
+    color: #f9f1f8;
+    border: 1px solid #f9f1f8;
+    padding:.5rem 2rem;
+    border-radius: 4px;
+    display:flex;
+}
+
+/* Footer */ 
+footer {
+    background: #1f2937;
+    color: #f9f1f8;
+}
+
+footer p { 
+    font-size:.75rem;
+    padding:1rem;
+}
+
